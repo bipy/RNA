@@ -1,0 +1,17 @@
+# File NDB_00072.ct
+# RNA SSTRAND database
+# External source: Nucleic Acid Database zdfb03, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  12 Energy = 0   'MOLECULAR STRUCTURE OF (M5DC-DG)3: THE ROLE OF THE METHYL GROUP ON 5-METHYL CYTOSINE IN STABILIZING Z-DNA '
+  1	c	0	2	12	1
+  2	G	1	3	11	2
+  3	c	2	4	10	3
+  4	G	3	5	9	4
+  5	c	4	6	8	5
+  6	G	5	0	7	6
+  7	c	0	8	6	7
+  8	G	7	9	5	8
+  9	c	8	10	4	9
+  10	G	9	11	3	10
+  11	c	10	12	2	11
+  12	G	11	0	1	12

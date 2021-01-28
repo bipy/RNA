@@ -1,0 +1,9 @@
+# File NDB_00009.ct
+# RNA SSTRAND database
+# External source: Nucleic Acid Database arb002, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  4 Energy = 0   'RNA DOUBLE-HELICAL FRAGMENTS AT ATOMIC RESOLUTION: I. THE CRYSTAL AND MOLECULAR STRUCTURE OF SODIUM ADENYLYL-3\',5\'- URIDINE HEXAHYDRATE '
+  1	A	0	2	4	1
+  2	U	1	0	3	2
+  3	A	0	4	2	3
+  4	U	3	0	1	4

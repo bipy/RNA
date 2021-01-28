@@ -1,0 +1,9 @@
+# File NDB_00023.ct
+# RNA SSTRAND database
+# External source: Nucleic Acid Database ddb033, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  4 Energy = 0   'LOW TEMPERATURE STRUCTURES OF DCPG-PROFLAVINE: CONFORMATIONAL AND HYDRATION EFFECTS '
+  1	C	0	2	4	1
+  2	G	1	0	3	2
+  3	C	0	4	2	3
+  4	G	3	0	1	4

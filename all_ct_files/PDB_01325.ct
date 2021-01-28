@@ -1,0 +1,29 @@
+# File PDB_01325.ct
+# RNA SSTRAND database
+# External source: RCSB Protein Data Bank 468D, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  24 Energy = 0   'CRYSTAL STRUCTURE AND IMPROVED ANTISENSE PROPERTIES OF 2\'-O- (2-METHOXYETHYL)-RNA '
+  1	c	0	2	24	1
+  2	g	1	3	23	2
+  3	c	2	4	22	3
+  4	g	3	5	21	4
+  5	a	4	6	20	5
+  6	a	5	7	19	6
+  7	u	6	8	18	7
+  8	u	7	9	17	8
+  9	c	8	10	16	9
+  10	g	9	11	15	10
+  11	c	10	12	14	11
+  12	g	11	0	13	12
+  13	c	0	14	12	13
+  14	g	13	15	11	14
+  15	c	14	16	10	15
+  16	g	15	17	9	16
+  17	a	16	18	8	17
+  18	a	17	19	7	18
+  19	u	18	20	6	19
+  20	u	19	21	5	20
+  21	c	20	22	4	21
+  22	g	21	23	3	22
+  23	c	22	24	2	23
+  24	g	23	0	1	24

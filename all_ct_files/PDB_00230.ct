@@ -1,0 +1,21 @@
+# File PDB_00230.ct
+# RNA SSTRAND database
+# External source: RCSB Protein Data Bank 1YFV, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  16 Energy = 0   'STRUCTURE OF (5\'-R(GP*GP*CP*GP*AP*GP*CP*C)-3\')2 BY 2-D NMR, 1 STRUCTURE '
+  1	G	0	2	16	1
+  2	G	1	3	15	2
+  3	C	2	4	14	3
+  4	G	3	5	13	4
+  5	A	4	6	12	5
+  6	G	5	7	11	6
+  7	C	6	8	10	7
+  8	C	7	0	9	8
+  9	G	0	10	8	9
+  10	G	9	11	7	10
+  11	C	10	12	6	11
+  12	G	11	13	5	12
+  13	A	12	14	4	13
+  14	G	13	15	3	14
+  15	C	14	16	2	15
+  16	C	15	0	1	16

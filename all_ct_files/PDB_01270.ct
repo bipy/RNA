@@ -1,0 +1,51 @@
+# File PDB_01270.ct
+# RNA SSTRAND database
+# External source: RCSB Protein Data Bank 2UWM, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  46 Energy = 0   'C-TERMINAL DOMAIN(WH2-WH4) OF ELONGATION FACTOR SELB IN COMPLEX WITH SECIS RNA '
+  1	G	0	2	23	1
+  2	G	1	3	22	2
+  3	C	2	4	21	3
+  4	G	3	5	20	4
+  5	U	4	6	19	5
+  6	U	5	7	18	6
+  7	G	6	8	17	7
+  8	C	7	9	16	8
+  9	C	8	10	15	9
+  10	G	9	11	0	10
+  11	G	10	12	0	11
+  12	U	11	13	0	12
+  13	C	12	14	0	13
+  14	U	13	15	0	14
+  15	G	14	16	9	15
+  16	G	15	17	8	16
+  17	C	16	18	7	17
+  18	A	17	19	6	18
+  19	A	18	20	5	19
+  20	C	19	21	4	20
+  21	G	20	22	3	21
+  22	C	21	23	2	22
+  23	C	22	0	1	23
+  24	G	0	25	46	24
+  25	G	24	26	45	25
+  26	C	25	27	44	26
+  27	G	26	28	43	27
+  28	U	27	29	42	28
+  29	U	28	30	41	29
+  30	G	29	31	40	30
+  31	C	30	32	39	31
+  32	C	31	33	38	32
+  33	G	32	34	0	33
+  34	G	33	35	0	34
+  35	U	34	36	0	35
+  36	C	35	37	0	36
+  37	U	36	38	0	37
+  38	G	37	39	32	38
+  39	G	38	40	31	39
+  40	C	39	41	30	40
+  41	A	40	42	29	41
+  42	A	41	43	28	42
+  43	C	42	44	27	43
+  44	G	43	45	26	44
+  45	C	44	46	25	45
+  46	C	45	0	24	46

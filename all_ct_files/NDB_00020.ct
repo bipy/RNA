@@ -1,0 +1,9 @@
+# File NDB_00020.ct
+# RNA SSTRAND database
+# External source: Nucleic Acid Database ddb009, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  4 Energy = 0   'THE STRUCTURE OF A DRUG-DEOXYDINUCLEOSIDE PHOSPHATE COMPLEX; GENERALIZED CONFORMATIONAL BEHAVIOR OF INTERCALATION COMPLEXES WITH RNA AND DNA FRAGMENTS '
+  1	C	0	2	4	1
+  2	G	1	0	3	2
+  3	C	0	4	2	3
+  4	G	3	0	1	4

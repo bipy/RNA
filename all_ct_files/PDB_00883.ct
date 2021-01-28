@@ -1,0 +1,41 @@
+# File PDB_00883.ct
+# RNA SSTRAND database
+# External source: RCSB Protein Data Bank 1ZBH, number of molecules: 3
+# The secondary structure annotation was obtained with RNAview
+  36 Energy = 0   '3\'-END SPECIFIC RECOGNITION OF HISTONE MRNA STEM-LOOP BY 3\'- EXONUCLEASE '
+  1	G	0	2	16	1
+  2	G	1	3	15	2
+  3	C	2	4	14	3
+  4	U	3	5	13	4
+  5	C	4	6	12	5
+  6	U	5	7	11	6
+  7	U	6	8	0	7
+  8	U	7	9	0	8
+  9	U	8	10	0	9
+  10	C	9	11	0	10
+  11	A	10	12	6	11
+  12	G	11	13	5	12
+  13	A	12	14	4	13
+  14	G	13	15	3	14
+  15	C	14	16	2	15
+  16	C	15	0	1	16
+  17	G	0	18	32	17
+  18	G	17	19	31	18
+  19	C	18	20	30	19
+  20	U	19	21	29	20
+  21	C	20	22	28	21
+  22	U	21	23	27	22
+  23	U	22	24	0	23
+  24	U	23	25	0	24
+  25	U	24	26	0	25
+  26	C	25	27	0	26
+  27	A	26	28	22	27
+  28	G	27	29	21	28
+  29	A	28	30	20	29
+  30	G	29	31	19	30
+  31	C	30	32	18	31
+  32	C	31	0	17	32
+  33	a	0	34	0	33
+  34	a	33	35	0	34
+  35	a	34	36	0	35
+  36	a	35	0	0	36

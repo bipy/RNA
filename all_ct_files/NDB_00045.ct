@@ -1,0 +1,9 @@
+# File NDB_00045.ct
+# RNA SSTRAND database
+# External source: Nucleic Acid Database drbb19, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  4 Energy = 0   'VISUALIZATION OF DRUG-NUCLEIC ACID INTERACTIONS AT ATOMIC RESOLUTION. I. STRUCTURE OF AN ETHIDIUM DINUCLEOSIDE MONOPHOSPHATE CRYSTALLINE COMPLEX, ETHIDIUM: 5- IODOURIDYLYL (3\'-5\') ADENOSINE '
+  1	u	0	2	4	1
+  2	A	1	0	3	2
+  3	u	0	4	2	3
+  4	A	3	0	1	4

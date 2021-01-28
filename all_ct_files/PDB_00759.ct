@@ -1,0 +1,23 @@
+# File PDB_00759.ct
+# RNA SSTRAND database
+# External source: RCSB Protein Data Bank 1UVN, number of molecules: 6
+# The secondary structure annotation was obtained with RNAview
+  18 Energy = 0   'THE STRUCTURAL BASIS FOR RNA SPECIFICITY AND CA2 INHIBITION OF AN RNA-DEPENDENT RNA POLYMERASE PHI6P2 CA2+ INHIBITION COMPLEX '
+  1	U	0	2	0	1
+  2	U	1	3	0	2
+  3	C	2	4	14	3
+  4	C	3	0	13	4
+  5	U	0	6	0	5
+  6	U	5	7	0	6
+  7	C	6	8	16	7
+  8	C	7	0	15	8
+  9	U	0	10	0	9
+  10	U	9	11	0	10
+  11	C	10	12	18	11
+  12	C	11	0	17	12
+  13	g	0	14	4	13
+  14	g	13	0	3	14
+  15	g	0	16	8	15
+  16	g	15	0	7	16
+  17	g	0	18	12	17
+  18	g	17	0	11	18

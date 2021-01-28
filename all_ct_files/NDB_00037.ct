@@ -1,0 +1,13 @@
+# File NDB_00037.ct
+# RNA SSTRAND database
+# External source: Nucleic Acid Database drbb09, number of molecules: 4
+# The secondary structure annotation was obtained with RNAview
+  8 Energy = 0   'VISUALIZATION OF DRUG-NUCLEIC ACID INTERACTIONS AT ATOMIC RESOLUTION: IV. STRUCTURE OF AN AMINOACRIDINE-DINUCLEOSIDE MONOPHOSPHATE CRYSTALLINE COMPLEX, 9-AMINOACRIDINE-5- IODOCYTIDYLYL(3\'-5\') GUANOSINE '
+  1	c	0	2	4	1
+  2	G	1	0	3	2
+  3	c	0	4	2	3
+  4	G	3	0	1	4
+  5	c	0	6	8	5
+  6	G	5	0	7	6
+  7	c	0	8	6	7
+  8	G	7	0	5	8

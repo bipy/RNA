@@ -1,0 +1,9 @@
+# File NDB_00013.ct
+# RNA SSTRAND database
+# External source: Nucleic Acid Database bdbp23, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  4 Energy = 0   'MOLECULAR STRUCTURE OF DEOXYCYTIDYL-3\'-METHYLPHOSPHONATE (RP) 5\'-DEOXYGUANIDINE, D[CP(CH3)G]. A NEUTRAL DINUCLEOTIDE WITH WATSON-CRICK BASE PAIRING AND A RIGHT HANDED HELICAL TWIST '
+  1	C	0	2	4	1
+  2	g	1	0	3	2
+  3	C	0	4	2	3
+  4	g	3	0	1	4

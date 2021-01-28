@@ -1,0 +1,17 @@
+# File NDB_00071.ct
+# RNA SSTRAND database
+# External source: Nucleic Acid Database zdf040, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  12 Energy = 0   'STRUCTURAL CHARACTERISTICS OF ENANTIOMORPHIC DNA: CRYSTAL ANALYSIS OF RACEMATES OF THE D(CGCGCG) DUPLEX '
+  1	C	0	2	12	1
+  2	G	1	3	11	2
+  3	C	2	4	10	3
+  4	G	3	5	9	4
+  5	C	4	6	8	5
+  6	G	5	0	7	6
+  7	C	0	8	6	7
+  8	G	7	9	5	8
+  9	C	8	10	4	9
+  10	G	9	11	3	10
+  11	C	10	12	2	11
+  12	G	11	0	1	12

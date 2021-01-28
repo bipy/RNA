@@ -1,0 +1,41 @@
+# File PDB_00104.ct
+# RNA SSTRAND database
+# External source: RCSB Protein Data Bank 1J9H, number of molecules: 4
+# The secondary structure annotation was obtained with RNAview
+  36 Energy = 0   'CRYSTAL STRUCTURE OF AN RNA DUPLEX WITH URIDINE BULGES '
+  1	G	0	2	18	1
+  2	U	1	3	17	2
+  3	G	2	4	16	3
+  4	U	3	5	0	4
+  5	C	4	6	15	5
+  6	G	5	7	14	6
+  7	c	6	8	12	7
+  8	A	7	9	11	8
+  9	C	8	0	10	9
+  10	G	0	11	9	10
+  11	U	10	12	8	11
+  12	G	11	13	7	12
+  13	U	12	14	0	13
+  14	C	13	15	6	14
+  15	G	14	16	5	15
+  16	c	15	17	3	16
+  17	A	16	18	2	17
+  18	C	17	0	1	18
+  19	G	0	20	36	19
+  20	U	19	21	35	20
+  21	G	20	22	34	21
+  22	U	21	23	0	22
+  23	C	22	24	33	23
+  24	G	23	25	32	24
+  25	c	24	26	30	25
+  26	A	25	27	29	26
+  27	C	26	0	28	27
+  28	G	0	29	27	28
+  29	U	28	30	26	29
+  30	G	29	31	25	30
+  31	U	30	32	0	31
+  32	C	31	33	24	32
+  33	G	32	34	23	33
+  34	c	33	35	21	34
+  35	A	34	36	20	35
+  36	C	35	0	19	36

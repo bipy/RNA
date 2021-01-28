@@ -1,0 +1,9 @@
+# File NDB_00012.ct
+# RNA SSTRAND database
+# External source: Nucleic Acid Database arb005, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  4 Energy = 0   'NDB id arb005'
+  1	G	0	2	4	1
+  2	C	1	0	3	2
+  3	G	0	4	2	3
+  4	C	3	0	1	4

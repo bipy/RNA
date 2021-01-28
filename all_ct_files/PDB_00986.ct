@@ -1,0 +1,35 @@
+# File PDB_00986.ct
+# RNA SSTRAND database
+# External source: RCSB Protein Data Bank 2D17, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  30 Energy = 0   'SOLUTION RNA STRUCTURE OF STEM-BULGE-STEM REGION OF THE HIV- 1 DIMERIZATION INITIATION SITE '
+  1	C	0	2	30	1
+  2	G	1	3	29	2
+  3	G	2	4	28	3
+  4	C	3	5	27	4
+  5	A	4	6	26	5
+  6	A	5	7	25	6
+  7	G	6	8	24	7
+  8	A	7	9	23	8
+  9	G	8	10	0	9
+  10	G	9	11	0	10
+  11	C	10	12	22	11
+  12	G	11	13	21	12
+  13	A	12	14	20	13
+  14	C	13	15	19	14
+  15	C	14	16	18	15
+  16	C	15	0	17	16
+  17	G	0	18	16	17
+  18	G	17	19	15	18
+  19	G	18	20	14	19
+  20	U	19	21	13	20
+  21	C	20	22	12	21
+  22	G	21	23	11	22
+  23	G	22	24	8	23
+  24	C	23	25	7	24
+  25	U	24	26	6	25
+  26	U	25	27	5	26
+  27	G	26	28	4	27
+  28	C	27	29	3	28
+  29	U	28	30	2	29
+  30	G	29	0	1	30

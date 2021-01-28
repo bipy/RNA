@@ -1,0 +1,29 @@
+# File PDB_00254.ct
+# RNA SSTRAND database
+# External source: RCSB Protein Data Bank 377D, number of molecules: 4
+# The secondary structure annotation was obtained with RNAview
+  24 Energy = 0   '5\'-R(*CP*GP*UP*AP*CP*G)-3\' '
+  1	C	0	2	12	1
+  2	G	1	3	11	2
+  3	U	2	4	10	3
+  4	A	3	5	9	4
+  5	C	4	6	8	5
+  6	G	5	0	7	6
+  7	C	0	8	6	7
+  8	G	7	9	5	8
+  9	U	8	10	4	9
+  10	A	9	11	3	10
+  11	C	10	12	2	11
+  12	G	11	0	1	12
+  13	C	0	14	24	13
+  14	G	13	15	23	14
+  15	U	14	16	22	15
+  16	A	15	17	21	16
+  17	C	16	18	20	17
+  18	G	17	0	19	18
+  19	C	0	20	18	19
+  20	G	19	21	17	20
+  21	U	20	22	16	21
+  22	A	21	23	15	22
+  23	C	22	24	14	23
+  24	G	23	0	13	24

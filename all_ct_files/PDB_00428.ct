@@ -1,0 +1,23 @@
+# File PDB_00428.ct
+# RNA SSTRAND database
+# External source: RCSB Protein Data Bank 1H0Q, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  18 Energy = 0   'NMR SOLUTION STRUCTURE OF A FULLY MODIFIED LOCKED NUCLEIC ACID (LNA) HYBRIDIZED TO RNA '
+  1	c	0	2	18	1
+  2	u	1	3	17	2
+  3	g	2	4	16	3
+  4	a	3	5	15	4
+  5	u	4	6	14	5
+  6	a	5	7	13	6
+  7	u	6	8	12	7
+  8	g	7	9	11	8
+  9	c	8	0	10	9
+  10	G	0	11	9	10
+  11	C	10	12	8	11
+  12	A	11	13	7	12
+  13	U	12	14	6	13
+  14	A	13	15	5	14
+  15	U	14	16	4	15
+  16	C	15	17	3	16
+  17	A	16	18	2	17
+  18	G	17	0	1	18

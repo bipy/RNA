@@ -1,0 +1,9 @@
+# File NDB_00041.ct
+# RNA SSTRAND database
+# External source: Nucleic Acid Database drbb14, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  4 Energy = 0   'VISUALIZATION OF DRUG-NUCLEIC ACID INTERACTIONS AT ATOMIC RESOLUTION. IX. STRUCTURES OF TWO N,N-DIMETHYLPROFLAVINE: 5-IODOCYTIDYLYL(3\'-5\')GUANOSINE CRYSTALLINE COMPLEXES '
+  1	c	0	2	4	1
+  2	G	1	0	3	2
+  3	c	0	4	2	3
+  4	G	3	0	1	4

@@ -1,0 +1,27 @@
+# File PDB_01065.ct
+# RNA SSTRAND database
+# External source: RCSB Protein Data Bank 2G92, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  22 Energy = 0   'CRYSTAL STRUCTURE ANALYSIS OF THE RNA DODECAMER CGC-(NF2)- AAUUAGCG, WITH AN INCORPORATED 2,4-DIFLUOROTOLUYL RESIDUE (NF2) '
+  1	C	0	2	22	1
+  2	G	1	3	21	2
+  3	C	2	4	20	3
+  4	A	3	5	18	4
+  5	A	4	6	17	5
+  6	U	5	7	16	6
+  7	U	6	8	15	7
+  8	A	7	9	0	8
+  9	G	8	10	14	9
+  10	C	9	11	13	10
+  11	G	10	0	12	11
+  12	C	0	13	11	12
+  13	G	12	14	10	13
+  14	C	13	15	9	14
+  15	A	14	16	7	15
+  16	A	15	17	6	16
+  17	U	16	18	5	17
+  18	U	17	19	4	18
+  19	A	18	20	0	19
+  20	G	19	21	3	20
+  21	C	20	22	2	21
+  22	G	21	0	1	22

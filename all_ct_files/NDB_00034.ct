@@ -1,0 +1,9 @@
+# File NDB_00034.ct
+# RNA SSTRAND database
+# External source: Nucleic Acid Database drb008, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  4 Energy = 0   'NDB id drb008'
+  1	C	0	2	4	1
+  2	G	1	0	3	2
+  3	C	0	4	2	3
+  4	G	3	0	1	4

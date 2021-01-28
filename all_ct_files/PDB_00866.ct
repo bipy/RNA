@@ -1,0 +1,24 @@
+# File PDB_00866.ct
+# RNA SSTRAND database
+# External source: RCSB Protein Data Bank 1YTU, number of molecules: 4
+# The secondary structure annotation was obtained with RNAview
+  19 Energy = 0   'STRUCTURAL BASIS FOR 5\'-END-SPECIFIC RECOGNITION OF THE GUIDE RNA STRAND BY THE A. FULGIDUS PIWI PROTEIN '
+  1	A	0	2	0	1
+  2	G	1	3	9	2
+  3	A	2	4	8	3
+  4	C	3	5	7	4
+  5	A	4	0	0	5
+  6	U	0	7	0	6
+  7	G	6	8	4	7
+  8	U	7	9	3	8
+  9	C	8	0	2	9
+  10	A	0	11	0	10
+  11	G	10	12	19	11
+  12	A	11	13	18	12
+  13	C	12	14	17	13
+  14	A	13	15	16	14
+  15	G	14	0	0	15
+  16	U	0	17	14	16
+  17	G	16	18	13	17
+  18	U	17	19	12	18
+  19	C	18	0	11	19

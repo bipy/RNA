@@ -1,0 +1,9 @@
+# File NDB_00046.ct
+# RNA SSTRAND database
+# External source: Nucleic Acid Database drd004, number of molecules: 2
+# The secondary structure annotation was obtained with RNAview
+  4 Energy = 0   'X-RAY CRYSTALLOGRAPHIC ANALYSIS OF A TERNARY INTERCALATION COMPLEX BETWEEN PROFLAVINE AND THE DINUCLEOSIDE MONOPHOSPHATES CPA AND UPG '
+  1	C	0	2	4	1
+  2	A	1	0	3	2
+  3	U	0	4	2	3
+  4	G	3	0	1	4
