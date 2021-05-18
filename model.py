@@ -173,9 +173,8 @@ def get_model(shape):
     # ================= 输出层 =================
     # 输入矩阵大小： L * L * 2
     # 输出矩阵大小： L * L * 1
-    # 39， 40
 
-    outputs = layers.Conv2D(kernel_size=1, strides=1, filters=1, activation='softmax')(x)
+    outputs = layers.Conv2D(kernel_size=1, strides=1, filters=1, activation='sigmoid')(x)
     # layers.Dense(units=10, activation='softmax')
     model = keras.Model(inputs, outputs, name='u-net')
     return model

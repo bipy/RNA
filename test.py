@@ -75,6 +75,12 @@ def test4():
     SOURCE_PATH = "split_ct_output"
     print(len(os.listdir(SOURCE_PATH)))
 
+def test5():
+    a = np.random.random((1, 128, 128, 1))
+    b = a[0]
+    b = b.swapaxes(0, 2)[0]
+    print(a)
+
 
 if __name__ == "__main__":
-    test4()
+    test5()

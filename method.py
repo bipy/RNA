@@ -8,6 +8,7 @@ from tensorflow.keras import optimizers
 
 import model
 import model2
+import model3
 
 '''
 模型处理相关方法
@@ -99,7 +100,7 @@ def train_model():
 
     keras.backend.clear_session()
 
-    m = model2.get_model((MATRIX_SIZE, MATRIX_SIZE, 1,))
+    m = model3.get_model((MATRIX_SIZE, MATRIX_SIZE, 1))
     m.compile(optimizer=optimizers.Adam(lr=1e-4), loss='binary_crossentropy', metrics=['accuracy'])
     # m.summary()
     now = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
@@ -108,7 +109,7 @@ def train_model():
     m.fit(
         x=x_train,
         y=y_train,
-        epochs=5,
+        epochs=2,
         batch_size=8,
         validation_data=(x_test, y_test),
         callbacks=[tensorboard_callback]
@@ -129,6 +130,7 @@ def model_predict(model_path, input_file_path):
     test_y = csv2matrix_y(input_csv)
     input_x_list.append(csv2matrix_x(input_csv))
     rt = m.predict(np.array(input_x_list))
+    test_x = rt[0].swapaxes(0, 2)[0]
     print(rt)
 
 # if __name__ == "__main__":
