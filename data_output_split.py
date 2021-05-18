@@ -5,8 +5,8 @@ import method
 RNA CT 文件分割 & 转换为 CSV
 '''
 
-SOURCE_PATH = "../all_ct_files"
-OUTPUT_PATH = "../csv_split"
+SOURCE_PATH = "all_ct_files"
+OUTPUT_PATH = "csv_split"
 
 
 class Item:

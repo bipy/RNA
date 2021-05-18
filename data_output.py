@@ -4,8 +4,8 @@ import os
 RNA CT 文件转 CSV
 '''
 
-SOURCE_PATH = "../all_ct_files"
-OUTPUT_PATH = "../csv_all"
+SOURCE_PATH = "all_ct_files"
+OUTPUT_PATH = "csv_all"
 
 
 class Item:

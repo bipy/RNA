@@ -6,8 +6,8 @@ import method
 RNA 测试集
 '''
 
-SOURCE_PATH = "../all_ct_files"
-OUTPUT_PATH = "../csv_test"
+SOURCE_PATH = "all_ct_files"
+OUTPUT_PATH = "csv_test"
 
 
 class Item:

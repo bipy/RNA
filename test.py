@@ -6,6 +6,7 @@ import time
 临时测试工具
 '''
 
+
 class Node:
     cnt: int
     name: str
@@ -16,7 +17,7 @@ class Node:
 
 
 def test1():
-    SOURCE_PATH = "../split_ct_output"
+    SOURCE_PATH = "split_ct_output"
     maxl = -1
     length_list = []
     for i in os.listdir(SOURCE_PATH):
@@ -55,7 +56,7 @@ def test2():
 
 
 def test3():
-    source = np.loadtxt("../split_ct_output/CRW_00746_7.csv", dtype=np.str, delimiter=',')
+    source = np.loadtxt("split_ct_output/CRW_00746_7.csv", dtype=np.str, delimiter=',')
     seq = []
     output = []
     for i in source:
@@ -69,9 +70,11 @@ def test3():
     print("".join(seq))
     print("".join(output))
 
+
 def test4():
     SOURCE_PATH = "split_ct_output"
     print(len(os.listdir(SOURCE_PATH)))
+
 
 if __name__ == "__main__":
     test4()
