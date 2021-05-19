@@ -261,3 +261,5 @@ model_**
 logs
 
 csv_*
+
+*.npz

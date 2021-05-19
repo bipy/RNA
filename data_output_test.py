@@ -1,6 +1,6 @@
 import os
 
-import method
+import data_output_matrix
 
 '''
 RNA 测试集
@@ -50,4 +50,5 @@ if __name__ == '__main__':
     for i in os.listdir(SOURCE_PATH):
         cur_filename = os.path.splitext(i)[0]
         output(cur_filename, ct2list(i))
-    method.clean(OUTPUT_PATH)
+    # data_output_matrix.clean(OUTPUT_PATH)
+    data_output_matrix.generate_data_list(OUTPUT_PATH, "data_test.npz")
