@@ -6,7 +6,6 @@ import time
 import tensorflow as tf
 import shutil
 
-import data_output_matrix
 import model
 import pydot
 
@@ -98,9 +97,9 @@ def test5():
     print(a)
 
 
-def test6():
-    data_output_matrix.generate_data_list_16("csv_split_16", "data_train_16.npz")
-    data_output_matrix.generate_data_list_16("csv_test_16", "data_test_16.npz")
+# def test6():
+    # data_output_matrix.generate_data_list_16("csv_split_16", "data_train_16.npz")
+    # data_output_matrix.generate_data_list_16("csv_test_16", "data_test_16.npz")
     # data_output_matrix.generate_data_list("csv_split", "data_train.npz")
     # data_output_matrix.generate_data_list("csv_test", "data_test.npz")
 
