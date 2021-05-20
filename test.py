@@ -6,6 +6,7 @@ import time
 import tensorflow as tf
 import shutil
 
+import method
 import model
 import pydot
 
@@ -141,14 +142,36 @@ def test9():
 
 
 def test10():
-    TP = 12517.0000
-    FP = 2505.0000
-    FN = 6947.0000
+    TP = 19017.0000
+    FP = 1809.0000
+    FN = 3344.0000
     R = TP / (TP + FN)
     P = TP / (TP + FP)
     F1 = (2 * P * R) / (R + P)
     print(f"R={R} - P={P} - F1={F1}")
 
+def test11():
+    # method.clean("csv_split")
+    total = {}
+    for i in os.listdir("csv_split"):
+        try:
+            source = np.loadtxt(f"csv_split/{i}", dtype=np.str, delimiter=',')
+            if len(source) > 256:
+                print("Sequence Too Long: skip " + i)
+                continue
+            for t in source:
+                if t[2] != '0':
+                    first = min(source[int(t[2]) - 1][1], t[1])
+                    second = max(source[int(t[2]) - 1][1], t[1])
+                    key = f"{first}-{second}"
+                    total[key] = total.get(key, 0) + 1
+        except ValueError:
+            print(f"Value Error: skip {i}")
+        print(f"{i} finished!")
+
+    for k, v in total.items():
+        print(f"{k}: {v}")
+
 
 if __name__ == "__main__":
-    test10()
+    test11()

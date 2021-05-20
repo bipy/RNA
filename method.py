@@ -14,7 +14,7 @@ import model3
 模型处理相关方法
 '''
 
-MATRIX_SIZE = 128
+MATRIX_SIZE = 256
 
 x_list, y_list = [], []
 
@@ -105,6 +105,7 @@ def generate_data_list(SOURCE_PATH):
 
 
 def clean(SOURCE_PATH):
+    valid = {"A", "C", "G", "U"}
     for i in os.listdir(SOURCE_PATH):
         try:
             source = np.loadtxt("{}/{}".format(SOURCE_PATH, i), dtype=np.str, delimiter=',')
@@ -112,6 +113,9 @@ def clean(SOURCE_PATH):
                 print("Sequence Too Long: skip " + i)
                 os.remove("{}/{}".format(SOURCE_PATH, i))
                 continue
+            for t in source:
+                if t[1] not in valid:
+                    raise ValueError
             x_list.append(gen_matrix_x(source))
             y_list.append(gen_matrix_y(source))
         except ValueError:
@@ -127,7 +131,7 @@ def train_model():
 
     keras.backend.clear_session()
 
-    m = model2.get_model((MATRIX_SIZE, MATRIX_SIZE, 1))
+    m = model.get_model((MATRIX_SIZE, MATRIX_SIZE, 16))
     m.compile(
         optimizer=optimizers.Adam(lr=1e-4),
         loss='binary_crossentropy',
@@ -145,8 +149,8 @@ def train_model():
     m.fit(
         x=np_x,
         y=np_y,
-        epochs=20,
-        batch_size=8,
+        epochs=200,
+        batch_size=16,
         # validation_data=(data_test["x"], data_test["y"]),
         validation_split=0.2,
         callbacks=[tensorboard_callback]

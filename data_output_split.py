@@ -1,5 +1,7 @@
 import os
 
+import method
+
 '''
 RNA CT 文件分割 & 转换为 CSV
 '''
@@ -74,4 +76,4 @@ if __name__ == '__main__':
     for i in os.listdir(SOURCE_PATH):
         cur_filename = os.path.splitext(i)[0]
         split_segment(cur_filename, ct2list(i))
-
+    method.clean(OUTPUT_PATH)
