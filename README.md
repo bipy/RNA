@@ -1,14 +1,14 @@
 # 文件结构
 
-all_ct_files      # RNA STRAND 数据库原始数据
+`all_ct_files`    # RNA STRAND 数据库原始数据
 
-csv_output         # CT 转换的 CSV
+`config.py`    # 配置
 
-csv_split           # CT 转换并分割的 CSV
+`test.py`    # 测试
 
 # 数据处理
 
-`data_output_split.py` 预处理数据
+`data_preprocess.py` 预处理数据
 
 # 模型训练
 

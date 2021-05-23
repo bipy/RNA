@@ -1,14 +1,13 @@
+import data_preprocess
 import method
+
 
 '''
 主程序 TensorFlow 2.*
 '''
 
-SOURCE_PATH = "csv_split"
-
 if __name__ == "__main__":
-    # method.generate_data_list(SOURCE_PATH)
-    method.generate_data_list_16(SOURCE_PATH)
+    # data_preprocess.initialize()
     method.train_model()
 
     # method.model_summary()

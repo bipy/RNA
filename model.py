@@ -98,7 +98,7 @@ def get_model(shape):
     # 卷积核大小为 3，步距为 1，选择 SAME 填充，激活函数为 ReLU，过滤器个数为 512
     x = conv_block(inputs=x, filters=512)
 
-    # x = layers.Dropout(0.5)(x)
+    x = layers.Dropout(0.5)(x)
 
     # ================= 第六模块 =================
     # 输入矩阵大小： L/16 * L/16 * 512
@@ -160,9 +160,11 @@ def get_model(shape):
     # 卷积模块
     x = conv_block(inputs=x, filters=32)
 
-    # 第四卷积层
+    # 卷积层
     # L * L * 32 -> L * L * 2
-    #x = conv_block(inputs=x, filters=2)
+    x = layers.Conv2D(kernel_size=1, strides=1, filters=2)(x)
+    x = layers.BatchNormalization()(x)
+    x = layers.ReLU()(x)
 
     # ================= 输出层 =================
     # 输入矩阵大小： L * L * 2

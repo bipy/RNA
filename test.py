@@ -1,15 +1,3 @@
-import os
-import random
-
-import numpy as np
-import time
-import tensorflow as tf
-import shutil
-
-import method
-import model
-import pydot
-
 '''
 临时测试工具
 '''
@@ -25,6 +13,8 @@ class Node:
 
 
 def test1():
+    import os
+    import numpy as np
     SOURCE_PATH = "split_ct_output"
     maxl = -1
     length_list = []
@@ -60,10 +50,12 @@ def test1():
 
 
 def test2():
+    import time
     print(f"{int(time.time())}")
 
 
 def test3():
+    import numpy as np
     source = np.loadtxt("split_ct_output/CRW_00746_7.csv", dtype=np.str, delimiter=',')
     seq = []
     output = []
@@ -80,11 +72,14 @@ def test3():
 
 
 def test4():
+    import os
     SOURCE_PATH = "split_ct_output"
     print(len(os.listdir(SOURCE_PATH)))
 
 
 def test5():
+    import numpy as np
+    import tensorflow as tf
     a = np.zeros((128, 128, 1), dtype=np.float)
     a[64, 64, 0] = 1
     b = tf.keras.activations.sigmoid(tf.constant(a, dtype=np.float, shape=(128, 128, 1)))
@@ -99,13 +94,16 @@ def test5():
 
 
 # def test6():
-    # data_output_matrix.generate_data_list_16("csv_split_16", "data_train_16.npz")
-    # data_output_matrix.generate_data_list_16("csv_test_16", "data_test_16.npz")
-    # data_output_matrix.generate_data_list("csv_split", "data_train.npz")
-    # data_output_matrix.generate_data_list("csv_test", "data_test.npz")
+# data_output_matrix.generate_data_list_16("csv_split_16", "data_train_16.npz")
+# data_output_matrix.generate_data_list_16("csv_test_16", "data_test_16.npz")
+# data_output_matrix.generate_data_list("csv_split", "data_train.npz")
+# data_output_matrix.generate_data_list("csv_test", "data_test.npz")
 
 
 def test7():
+    import os
+    import random
+    import shutil
     if not os.path.exists("csv_split_16"):
         os.makedirs("csv_split_16")
     for file in os.listdir("csv_split"):
@@ -119,6 +117,7 @@ def test7():
 
 
 def test8():
+    import numpy as np
     # vector_col = np.zeros((128, 4), dtype=np.float)
     vector_col = np.random.random((4, 4))
     vector_row = vector_col.T
@@ -137,6 +136,8 @@ def test8():
 
 
 def test9():
+    import model
+    import tensorflow as tf
     m = model.get_model((128, 128, 16))
     tf.keras.utils.plot_model(m, "model.png", show_shapes=True)
 
@@ -150,9 +151,13 @@ def test10():
     F1 = (2 * P * R) / (R + P)
     print(f"R={R} - P={P} - F1={F1}")
 
+
 def test11():
+    import numpy as np
+    import os
     # method.clean("csv_split")
-    total = {}
+    acgu = {"A": 0, "C": 1, "G": 2, "U": 3}
+    weight = np.zeros(shape=(4, 4), dtype=np.float)
     for i in os.listdir("csv_split"):
         try:
             source = np.loadtxt(f"csv_split/{i}", dtype=np.str, delimiter=',')
@@ -161,17 +166,21 @@ def test11():
                 continue
             for t in source:
                 if t[2] != '0':
-                    first = min(source[int(t[2]) - 1][1], t[1])
-                    second = max(source[int(t[2]) - 1][1], t[1])
-                    key = f"{first}-{second}"
-                    total[key] = total.get(key, 0) + 1
+                    weight[acgu[source[int(t[2]) - 1][1]], acgu[t[1]]] += 1
         except ValueError:
             print(f"Value Error: skip {i}")
         print(f"{i} finished!")
+    weight = weight / np.max(weight)
+    print(weight)
 
-    for k, v in total.items():
-        print(f"{k}: {v}")
+
+def test12():
+    import time
+    N = 1000
+    for i in range(N):
+        time.sleep(0.01)
+        print("\r进度:{0}%".format(round((i + 1) * 100 / N)), end='')
 
 
 if __name__ == "__main__":
-    test11()
+    test12()
