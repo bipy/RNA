@@ -41,7 +41,7 @@ def gen_matrix_y(source):
 def save(x_list, y_list):
     np_x = np.array(x_list)
     np_y = np.array(y_list)
-    np.savez(OUTPUT_PATH, x=np_x, y=np_y)
+    np.savez_compressed(OUTPUT_PATH, x=np_x, y=np_y)
 
 
 def travel():

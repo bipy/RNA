@@ -160,15 +160,15 @@ def get_model(shape):
     # 卷积模块
     x = conv_block(inputs=x, filters=32)
 
+    # ================= 输出层 =================
+    # 输入矩阵大小： L * L * 32
+    # 输出矩阵大小： L * L * 1
+
     # 卷积层
     # L * L * 32 -> L * L * 2
     x = layers.Conv2D(kernel_size=1, strides=1, filters=2)(x)
     x = layers.BatchNormalization()(x)
     x = layers.ReLU()(x)
-
-    # ================= 输出层 =================
-    # 输入矩阵大小： L * L * 2
-    # 输出矩阵大小： L * L * 1
 
     outputs = layers.Conv2D(kernel_size=1, strides=1, filters=1, activation=keras.activations.sigmoid)(x)
     model = keras.Model(inputs, outputs, name='u-net')

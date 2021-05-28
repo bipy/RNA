@@ -182,5 +182,29 @@ def test12():
         print("\r进度:{0}%".format(round((i + 1) * 100 / N)), end='')
 
 
+def test13():
+    import numpy as np
+    import tensorflow as tf
+    input_shape = (1, 2, 2, 1)
+    x = np.zeros(shape=input_shape)
+    s = x[0,:,:,0]
+    s[0,0] = 5
+    s[0,1] = 4
+    s[1,0] = 3
+    s[1,1] = 6
+    print(s)
+    # y = tf.keras.layers.UpSampling2D(size=(2, 2), interpolation='bilinear')(x)
+    # x = tf.keras.layers.BatchNormalization()(x)
+    y = tf.keras.layers.Activation(tf.keras.activations.softmax)(x)
+    s = y[0,:,:,0].numpy()
+    print(s)
+
+def test14():
+    import numpy as np
+    x = np.load("weight.npz")["data"]
+    x = x * 255
+    print(x)
+
+
 if __name__ == "__main__":
-    test12()
+    test14()
