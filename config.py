@@ -4,15 +4,13 @@ Configuration
 
 '''General Config'''
 
-MATRIX_SIZE = 256
+MATRIX_SIZE = 128
 
-EPOCH = 100
+EPOCH = 200
 
 BATCH_SIZE = 8
 
 VALIDATION_SPLIT = 0.2
-
-VALIDATION_BATCH_SIZE = 1
 
 '''File Path'''
 

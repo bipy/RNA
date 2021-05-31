@@ -81,8 +81,6 @@ def get_model(shape):
     # 卷积核大小为 3，步距为 1，选择 SAME 填充，激活函数为 ReLU，过滤器个数为 256
     x = conv_block(inputs=x, filters=256)
 
-    # x = layers.Dropout(0.5)(x)
-
     # 连接点
     p4 = x
 
@@ -97,8 +95,6 @@ def get_model(shape):
     # 卷积模块
     # 卷积核大小为 3，步距为 1，选择 SAME 填充，激活函数为 ReLU，过滤器个数为 512
     x = conv_block(inputs=x, filters=512)
-
-    x = layers.Dropout(0.5)(x)
 
     # ================= 第六模块 =================
     # 输入矩阵大小： L/16 * L/16 * 512
@@ -170,6 +166,8 @@ def get_model(shape):
     x = layers.BatchNormalization()(x)
     x = layers.ReLU()(x)
 
-    outputs = layers.Conv2D(kernel_size=1, strides=1, filters=1, activation=keras.activations.sigmoid)(x)
+    x = layers.Conv2D(kernel_size=1, strides=1, filters=1)(x)
+    outputs = layers.Activation(keras.activations.sigmoid)(x)
+
     model = keras.Model(inputs, outputs, name='u-net')
     return model

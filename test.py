@@ -201,8 +201,7 @@ def test13():
 
 def test14():
     import numpy as np
-    x = np.load("weight.npz")["data"]
-    x = x * 255
+    x = np.load("data.npz")
     print(x)
 
 

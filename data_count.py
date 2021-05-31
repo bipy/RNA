@@ -15,7 +15,7 @@ def count_length():
             length_list.append(len(source))
         except Exception as e:
             print(f"{i}: {e}")
-    return length_list
+    return sorted(length_list)
 
 
 if __name__ == '__main__':

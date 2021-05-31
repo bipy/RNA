@@ -32,7 +32,7 @@ def gen_model():
     m = model.get_model((MATRIX_SIZE, MATRIX_SIZE, 1))
     m.compile(
         optimizer=optimizers.Adam(lr=1e-4),
-        loss='binary_crossentropy',
+        loss=tf.keras.losses.BinaryCrossentropy(),
         metrics=[
             tf.keras.metrics.TruePositives(),
             tf.keras.metrics.TrueNegatives(),
@@ -56,7 +56,6 @@ def train_model():
         epochs=config.EPOCH,
         batch_size=config.BATCH_SIZE,
         validation_split=config.VALIDATION_SPLIT,
-        validation_batch_size=config.VALIDATION_BATCH_SIZE,
         callbacks=[tensorboard_callback]
     )
     m.save(f"model_{now}")
