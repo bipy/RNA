@@ -4,11 +4,11 @@ Configuration
 
 '''General Config'''
 
-MATRIX_SIZE = 128
+MATRIX_SIZE = 256
 
 EPOCH = 200
 
-BATCH_SIZE = 8
+BATCH_SIZE = 32
 
 VALIDATION_SPLIT = 0.2
 

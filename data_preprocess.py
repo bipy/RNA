@@ -11,9 +11,9 @@ def initialize():
 
         data_csv_split.travel()
 
-        data_weight.gen_weight()
-
         data_clean.clean()
+
+        data_weight.gen_weight()
 
         data_matrix.travel()
 

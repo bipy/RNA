@@ -10,7 +10,7 @@ import config
 import model
 
 '''
-模型处理相关方法
+模型相关方法
 '''
 
 MATRIX_SIZE = config.MATRIX_SIZE
@@ -46,7 +46,6 @@ def gen_model():
 def train_model():
     data = load_data()
     m = gen_model()
-    # m.summary()
     now = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
     log_dir = f"logs/fit/{now}"
     tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
@@ -65,16 +64,3 @@ def model_summary():
     m = gen_model()
     m.summary()
 
-# def model_predict(model_path, input_file_path):
-#     m = keras.models.load_model(model_path)
-#     input_x_list = []
-#     input_csv = np.loadtxt(input_file_path, dtype=np.str, delimiter=',')
-#     test_y = gen_matrix_y(input_csv)
-#     input_x_list.append(gen_matrix_x(input_csv))
-#     input_np = np.array(input_x_list)
-#     rt = m.predict(input_np)
-#     test_x = rt[0, :, :, 0]
-#     print(rt)
-
-# if __name__ == "__main__"
-#     train()

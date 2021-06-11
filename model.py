@@ -3,7 +3,7 @@ from tensorflow import keras
 from tensorflow.keras import layers
 
 '''
-U-Net 模型
+模型
 '''
 
 
@@ -166,8 +166,10 @@ def get_model(shape):
     x = layers.BatchNormalization()(x)
     x = layers.ReLU()(x)
 
+    # 卷积层
+    # L * L * 2 -> L * L * 1
     x = layers.Conv2D(kernel_size=1, strides=1, filters=1)(x)
     outputs = layers.Activation(keras.activations.sigmoid)(x)
 
-    model = keras.Model(inputs, outputs, name='u-net')
+    model = keras.Model(inputs, outputs, name='model')
     return model

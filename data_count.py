@@ -4,7 +4,7 @@ import os
 '''
 RNA 序列长度计算
 '''
-SOURCE_PATH = "csv_split"
+SOURCE_PATH = "csv_final"
 
 
 def count_length():

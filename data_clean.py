@@ -27,7 +27,7 @@ def clean():
                     break
             if valid:
                 shutil.copyfile(f"{SOURCE_PATH}/{file}", f"{OUTPUT_PATH}/{file}")
-        print("\rPREPROCESS 4/5: CLEAN - {}%".format(round((i + 1) * 100 / len(files))), end='')
+        print("\rPREPROCESS 3/5: CLEAN - {}%".format(round((i + 1) * 100 / len(files))), end='')
     print('')
 
 

@@ -20,7 +20,7 @@ def gen_weight():
                 pair = source[int(t[2]) - 1][1]
                 if pair in acgu:
                     weight[acgu[pair], acgu[t[1]]] += 1
-        print("\rPREPROCESS 3/5: WEIGHT - {}%".format(round((i + 1) * 100 / len(files))), end='')
+        print("\rPREPROCESS 4/5: WEIGHT - {}%".format(round((i + 1) * 100 / len(files))), end='')
     weight = (np.e - 1) * (weight / np.max(weight))
     weight = np.tanh(weight)
     np.savez(OUTPUT_PATH, data=weight)
